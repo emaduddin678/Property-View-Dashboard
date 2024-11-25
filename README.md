@@ -8,13 +8,17 @@ Live link: https://propertyview.netlify.app/
 
 Step 1: copy and paste into the terminal:
 ```
-https://github.com/emaduddin678/Property-View-Dashboard.git
+git clone https://github.com/emaduddin678/Property-View-Dashboard.git
 ```
 Step 2:
 ```
-npm install
+cd Property-View-Dashboard
 ```
 Step 3:
+```
+npm install
+```
+Step 4:
 ```
 npm run dev
 ```
