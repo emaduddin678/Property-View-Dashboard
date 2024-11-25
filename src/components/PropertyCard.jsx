@@ -8,9 +8,14 @@ const PropertyCard = ({ properties }) => {
           key={property.id}
           className="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl"
         >
+          {console.log(property)}
           <img
             className="w-full h-60"
-            src={property.image}
+            src={
+              property.image instanceof File
+                ? URL.createObjectURL(property.image)
+                : property.image
+            }
             alt={property.name}
           />
           <div className="px-6 py-4">
